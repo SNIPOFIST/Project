@@ -6,12 +6,12 @@ import datetime
 import streamlit as st
 
 
-st.header("Weather Forecast using python")
+st.title("Weather Forecast using python ☁️🌪")
 
 col1 ,col2 = st.columns(2)
 
 with col1:
-    query_val = st.text_input('Enter the city name ', 'Delhi')
+    query_val = st.text_input('Enter the city name ', 'New Delhi')
     st.caption(r'Weather forecast at {} currently '.format(query_val)) 
 
 
@@ -40,7 +40,7 @@ def Weather(query_val):
         col1.metric("Temperature", "{}°F".format(page_response['current']['temperature']))
         col2.metric("Wind", "{}mph".format(page_response['current']['wind_speed']))
         col3.metric("Humidity", "{}%".format(page_response['current']['humidity']))
-        st.info("Local Time & Date at  {} is {} / {}".format(query_val,page_response['location']['localtime'][11:16] ,page_response['location']['localtime'][0:10]))
+        st.warning("Local Time & Date at  {} is {} / {}".format(query_val,page_response['location']['localtime'][11:16] ,page_response['location']['localtime'][0:10]))
         st.info("Currently at {} it is {} ".format(query_val,page_response['current']['weather_descriptions'][0]))
         st.info("Latitude ⇀ {}".format(page_response['location']['lat']))
         st.info("Longitude ⇀ {}".format(page_response['location']['lon']))
