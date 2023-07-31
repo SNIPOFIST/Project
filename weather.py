@@ -40,7 +40,7 @@ def Weather(query_val):
         col1.metric("Temperature", "{}°F".format(page_response['current']['temperature']))
         col2.metric("Wind", "{}mph".format(page_response['current']['wind_speed']))
         col3.metric("Humidity", "{}%".format(page_response['current']['humidity']))
-        st.warning("Local Time & Date at  {} is {} / {}".format(query_val,page_response['location']['localtime'][11:16] ,page_response['location']['localtime'][0:10]))
+        st.info("Local Time & Date at  {} is {} / {}".format(query_val,page_response['location']['localtime'][11:16] ,page_response['location']['localtime'][0:10]))
         st.info("Currently at {} it is {} ".format(query_val,page_response['current']['weather_descriptions'][0]))
         st.info("Latitude ⇀ {}".format(page_response['location']['lat']))
         st.info("Longitude ⇀ {}".format(page_response['location']['lon']))
