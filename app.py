@@ -26,7 +26,7 @@ st.set_page_config(
 )
 
 st.title(""" 
-            Stock Price Analysis :bar_chart:""")
+            Stock Price Analysis :bar_chart: 🔎""")
 
 
 today_yyy_mm_d = datetime.date.today()
@@ -38,7 +38,7 @@ yesterday = today_yyy_mm_d - timedelta(days=1)
 
 
 symbol = st.selectbox(
-    'Which Stock Symbol would you want to analyse?',
+    'Select the Stock Symbol you would want to analyse !!!',
     ('AAPL', 'GOOGL', 'MSFT', 'AMZN', 'META', 'TSLA', 'GOOG', 'FB', 'JPM', 'BABA',
 'PG', 'NVDA', 'UNH', 'HD', 'WMT', 'DIS', 'MA', 'V', 'TSM', 'INTC', 'BA',
 'CSCO', 'JNJ', 'MRK', 'WBA', 'KO', 'PEP', 'XOM', 'CMCSA', 'DISN', 'T',
@@ -53,7 +53,7 @@ ticker_data = yf.Ticker(symbol)
 
 
 current_price ="{} {}".format(ticker_data.info['currentPrice'],ticker_data.info['financialCurrency'])
-st.header("Stock current value : {}".format(current_price))
+st.header("Live Stock value : {}".format(current_price))
 
 business_story = ticker_data.info['longBusinessSummary']
 
