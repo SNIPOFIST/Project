@@ -5,6 +5,7 @@
 
 
 import datetime
+from datetime import timedelta
 import time 
 import streamlit as st
 import yfinance as yf
@@ -32,6 +33,7 @@ today_yyy_mm_d = datetime.date.today()
 today_year = today_yyy_mm_d.strftime("%Y")
 today_month = today_yyy_mm_d.strftime("%m")
 today_date = today_yyy_mm_d.strftime("%d")
+yesterday = today_yyy_mm_d - timedelta(days=1)
 
 
 
@@ -48,27 +50,28 @@ symbol = st.selectbox(
 
 ticker_data = yf.Ticker(symbol)
 
+
+
 current_price ="{} {}".format(ticker_data.info['currentPrice'],ticker_data.info['financialCurrency'])
-st.header("Stock current value: {}".format(current_price))
+st.header("Stock current value : {}".format(current_price))
 
 business_story = ticker_data.info['longBusinessSummary']
 
-if st.button('About the company  🔎'):
+if st.button('About {} 🔎'.format(symbol)):
     st.caption(business_story)
 
 
 col1, col2 = st.columns(2)
 
 with col1:
-    start_date = st.date_input("Start date", datetime.date(2015, 1, 1))
+    start_date = st.date_input("Start date", datetime.date(2023, 1, 1))
 
 with col2:
     end_date = st.date_input("End date", datetime.date(int(today_year), int(today_month), int(today_date)))
 
+
 ticker_df = ticker_data.history(period="1d", start= start_date, end=end_date)
 st.dataframe(ticker_df)
-
-
 
 st.write(f"""
     ### {symbol}'s Closing Price Chart""")
@@ -79,7 +82,3 @@ st.write(f"""
     ### {symbol}'s Volume Chart""")
 
 st.line_chart(ticker_df["Volume"])
-
-st.write(f"""
-    ### {symbol}'s High Price Chart""")
-st.line_chart(ticker_df["High"])
