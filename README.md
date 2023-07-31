@@ -1,3 +1,3 @@
-# Test_repository
-to check if the new repository is working or not !!!
-making a change here to check the commit from vs code
+# Project Repo
+1. weather.py -> weather forecast using python and Streamlit
+2. app.py -> stock market analysis using python and Streamlit
