@@ -1,2 +1,3 @@
+Solely depends on these 2 libraries 
 streamlit
 yfinance
