@@ -1,7 +1,7 @@
-### Checkout my web app **Stock Market analyser** Python and Streamlit https://stockpriceanalysis.streamlit.app/
+### Checkout my web app **Stock Market analysis** Python and Streamlit https://stockpriceanalysis.streamlit.app/
 
-About Live Weather Forecast using Python and Streamlit
-source file - app.py
+About Stock Market analyser** Python and Streamlit
+[source file - app.py]
 
 - This project is an experimental visualisation -> Stock market analyser web app built using Python and streamlit framework 
 - The stock market data source was imported from the opensource yahoo finance library 'yfinance' --version 0.2.26
