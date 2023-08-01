@@ -1,4 +1,5 @@
-### Checkout my web app **Stock Market analysis** Python and Streamlit https://stockpriceanalysis.streamlit.app/
+## Checkout my web app Stock Market analysis Python and Streamlit https://stockpriceanalysis.streamlit.app/
+
 
 About Stock Market analyser** Python and Streamlit
 [source file - app.py]
