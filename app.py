@@ -43,7 +43,7 @@ symbol = st.selectbox(
 'PG', 'NVDA', 'UNH', 'HD', 'WMT', 'DIS', 'MA', 'V', 'TSM', 'INTC', 'BA',
 'CSCO', 'JNJ', 'MRK', 'WBA', 'KO', 'PEP', 'XOM', 'CMCSA', 'DISN', 'T',
 'UPS', 'CAT', 'PGN', 'UNH', 'VZ', 'MSFT', 'ABT', 'KO', 'WMT', 'TGT',
-'COST', 'HD', 'LOW', 'CVS', 'WMT', 'BRK.A', 'BRK.B', 'TRV', 'UNH', 'PM',
+'COST', 'HD', 'LOW', 'CVS', 'WMT', 'TRV', 'UNH', 'PM',
 'VZ', 'JNJ', 'EMR', 'MMM', 'CAT', 'AAPL', 'UNH', 'PG', 'MRK', 'CVX',
 'JPM', 'WBA', 'PFE', 'ABT', 'LLY', 'COST', 'WMT'))
 
