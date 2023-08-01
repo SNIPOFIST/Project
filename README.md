@@ -1,5 +1,5 @@
 # About **Stock Market analyser**
-1. app.py -> stock market analysis using python and Streamlit
+## app.py -> stock market analysis using python and Streamlit
 
 - This project is a Stock market analyser web app built using Python and streamlit framework 
 - The stock market data source was imported from the opensource yahoo finance library 'yfinance' --version 0.2.26
