@@ -24,6 +24,9 @@ st.set_page_config(
     menu_items = {
         'About' : description_txt}
 )
+st.set_page_config(
+    page_title = "Stock Prize Analyser",
+    layout='wide')
 
 st.title(""" 
             Stock Price Analysis :bar_chart: 🔎""")
@@ -43,7 +46,7 @@ symbol = st.selectbox(
 'PG', 'NVDA', 'UNH', 'HD', 'WMT', 'DIS', 'MA', 'V', 'TSM', 'INTC', 'BA',
 'CSCO', 'JNJ', 'MRK', 'WBA', 'KO', 'PEP', 'XOM', 'CMCSA', 'DISN', 'T',
 'UPS', 'CAT', 'PGN', 'UNH', 'VZ', 'MSFT', 'ABT', 'KO', 'WMT', 'TGT',
-'COST', 'HD', 'LOW', 'CVS', 'WMT', 'TRV', 'UNH', 'PM',
+'COST', 'HD', 'LOW', 'CVS', 'WMT', 'BRK.A', 'BRK.B', 'TRV', 'UNH', 'PM',
 'VZ', 'JNJ', 'EMR', 'MMM', 'CAT', 'AAPL', 'UNH', 'PG', 'MRK', 'CVX',
 'JPM', 'WBA', 'PFE', 'ABT', 'LLY', 'COST', 'WMT'))
 
@@ -82,3 +85,25 @@ st.write(f"""
     ### {symbol}'s Volume Chart""")
 
 st.line_chart(ticker_df["Volume"])
+
+st.write("")
+st.write("")
+st.divider()
+st.subheader("Let's Connect !!!")
+st.write("")
+st.write("")
+st.write("")
+footer_col1 , footer_col2 = st.columns(2)
+with footer_col1:
+    st.markdown("LinkedIn -  [Hari Ram S]('https://www.linkedin.com/in/hari-ram-s-342a7621b/')")
+    st.markdown("Github - [SNIPOFIST](https://github.com/SNIPOFIST) ") 
+    st.markdown("Instagram -  [hari____7]('https://www.instagram.com/hari____7/')")
+    st.markdown("Mail -  [HariramSelvaraj@yahoo.com](mailto:HariramSelvaraj@yahoo.com)")
+
+with footer_col2:
+    st.caption("Give a visit to my other streamlit projects")
+    st.markdown("Weather Forecasr using Python - [https://howstheweatherlike.streamlit.app/](https://stocksinfo.streamlit.app/)")
+st.divider()
+
+st.caption("source code repo")
+st.code('''https://github.com/SNIPOFIST/Stock-market-analysis''')
