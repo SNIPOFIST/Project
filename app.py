@@ -20,13 +20,11 @@ Tool used\n
 """
 
 st.set_page_config(
+    page_title = "Stock Prize Analyser",
     layout = "wide",
     menu_items = {
         'About' : description_txt}
 )
-st.set_page_config(
-    page_title = "Stock Prize Analyser",
-    layout='wide')
 
 st.title(""" 
             Stock Price Analysis :bar_chart: 🔎""")
