@@ -103,5 +103,4 @@ with footer_col2:
     st.markdown("Weather Forecasr using Python - [https://howstheweatherlike.streamlit.app/](https://stocksinfo.streamlit.app/)")
 st.divider()
 
-st.caption("source code repo")
-st.code('''https://github.com/SNIPOFIST/Stock-market-analysis''')
+
